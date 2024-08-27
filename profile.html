@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <header>
+      <div class="myhead">
+        <img src="images/download.png" alt=" No image" />
+        <h2>MY TODO</h2>
+      </div>
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Login|Register</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="title">
+        <h1>Write your Daily Routine here</h1>
+      </div>
+    </header>
+    <main>
+      <div class="profile">
+        <h2>User Profile</h2>
+        <h3>Welcome, <span id="pro-username">[UserName]</span></h3>
+        <p>Email: <span id="pro-email">[User Email]</span></p>
+
+        <h4>Edit Profile Details</h4>
+        <form action="#" id="edit-pro-form">
+          <input type="text" id="edit-name" placeholder="New username" />
+          <input type="text" id="edit-email" placeholder="New Email" />
+          <button type="submit">Save changes</button>
+          <p id="edit-error-msg" style="display: none; color: red;"></p>
+        </form>
+
+        <h4>Change Password</h4>
+        <form action="#" id="change-pro-form">
+          <input
+            type="password"
+            id="current-pass"
+            placeholder="Current Password"
+            required
+          />
+          <input
+            type="password"
+            id="new-pass"
+            placeholder="New Password"
+            required
+          />
+          <input type="password"  id="confirm-pass" placeholder="Confirm password">
+          <button type="submit">Change Password</button>
+          <p id="change-error-msg" style="display: none; color: red;"></p>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

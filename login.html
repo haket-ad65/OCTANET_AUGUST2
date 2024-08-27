@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login|Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="myhead">
+        <img src="images/download.png" alt=" No image" />
+        <h2>MY TODO</h2>
+      </div>
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Login|Register</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="title">
+        <h1>Write your Daily Routine here</h1>
+      </div>
+    </header>
+    <main>
+      <div class="forms">
+        <h2 id="form-title">Login</h2>
+        <form action="#" id="login-form">
+          <input type="email" id="login-email" placeholder="Email" required />
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Login</button>
+          <p>
+            Don't have an account?
+            <a href="#" id="show-regist">Register here</a>
+          </p>
+          <p id="loginerrormsg" style="display: none; color: red;"></p>
+        </form>
+
+        <form action="#" id="register-form" style="display: none">
+          <input
+            type="text"
+            id="register-username"
+            placeholder="Username"
+            required
+          />
+          <input
+            type="email"
+            id="register-email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="password"
+            id="register-password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Register</button>
+          <p>
+            Already have an account? <a href="#" id="show-login">Login here</a>
+          </p>
+          <p id="registerrormsg" style="display: none; color: red;"></p>
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

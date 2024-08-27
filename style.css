@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+header{
+    background-color: #090909;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+.myhead{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+.myhead img{
+    height: 50px;
+    width:50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.myhead h2{
+    font-size: 24px;
+    margin: 0;
+    font-family: "DM Serif Text", serif;
+
+}
+.navbar{
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+}
+.navbar nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+.navbar nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar nav ul li a:hover{
+   text-decoration: underline;
+   color: #090909;
+   background-color: #f4f4f4;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.title h1{
+    font-size: 36px;
+    margin: 0;
+    font-family: "DM Serif Text", serif;
+}
+
+
+.todo{
+    background: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.todo h3{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+}
+.todo input{
+    width: calc(100%-110px);
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.todo button{
+    width: 80px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.todo button:hover{
+    background-color: #555;
+    color: cornsilk
+}
+.todo ul{
+    list-style-type: none;
+    padding: 0;
+}
+.todo ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+.todo ul li.completed{
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+.profile {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile h3, .profile h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.profile h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "DM Serif Text", serif;
+}
+.profile form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.profile form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.profile form button:hover {
+    background-color: #555;
+    color: cornsilk;
+}
+
+
+.forms {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.forms h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "DM Serif Text", serif;
+}
+.forms form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.forms form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.forms form button:hover {
+    background-color: #555;
+    color: cornsilk;
+}
+.forms p {
+    text-align: center;
+}
+.forms p a {
+    color: #090909;
+    text-decoration: none;
+}
+.forms p a:hover {
+    text-decoration: underline;
+    color: #090909;
+    background-color: #f4f4f4;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header .navbar nav ul {
+        justify-content: center;
+    }
+    section.todo input {
+        width: calc(100% - 90px);
+    }
+    section.todo button {
+        width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .myhead {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .myhead img {
+        margin-bottom: 10px;
+    }
+    header .title h1 {
+        font-size: 1.5rem;
+    }
+    section.todo input {
+        width: calc(100% - 80px);
+    }
+    section.todo button {
+        width: 60px;
+    }
+}
